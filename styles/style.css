@@ -1,0 +1,169 @@
+.quicksand-normal{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* shared stylee */
+  .display-flex{
+       display: flex;
+  }
+  /* Orange color */
+  .orange{
+      color: orange;
+  }
+  /* SKy blue */
+  .sky-blue{
+     color: rgb(8, 170, 234);
+  }
+  
+  /* NAV section style*/
+  body{
+      margin: 0 auto; 
+      max-width: 1158px;
+  }
+  .header{
+      max-width: 0 140px;
+  }
+  .nav-parent{
+      justify-content: space-between;
+      margin: 0 auto;
+      align-items: center;
+      padding: 20px 20px;
+  }
+  .nav-logo{
+      width: 62px;
+      height: 62px;
+  }
+  .school{
+      font-size: 2rem;
+      font-weight: bold;
+     margin: 18px;
+     position: relative;
+     
+  }
+  .nav-item{
+      list-style : none;
+      margin-top: 36px;   
+  }
+  
+  .nav-links{
+      text-align: center;
+      justify-content: center;
+      gap: 32px;
+      position: relative;
+      bottom: 10px; 
+  }
+  .facilities{
+      color: rgba(5, 212, 223, 1);
+  }
+  .admission{
+      color: rgba(93, 88, 239, 1);
+  }
+  
+  .nav-link{
+      text-decoration: none; 
+  }
+  
+  .nav-button{
+        font-size: 20px;
+        font-weight: 600;
+         border-radius: 12px; 
+        color: white;
+        padding: 10px 60px;
+        border: none;
+        background-color: orange;
+        transition: 0.5s;
+  }
+  .nav-button:hover{
+       background-color: lightgreen;
+       scale: 1.1;
+  }
+  .hidden-icon{
+    display:none
+  }
+  /* Banner section */
+  .banner-parent{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 26px;
+ 
+  }
+  .banner-title{
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 24px; 
+      max-width: 640px; 
+  }
+  .banner-description{
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+    max-width: 640px;
+  }
+  .banner-button{
+     background-color: black;
+     font-size: 1.25rem;
+     font-weight: bold;
+     color: white;
+     padding: 10px 47px;
+     border-radius: 12px;
+     transition: 0.5s;
+     border: none;
+     
+  }
+  .banner-button:hover{
+      background-color: darkolivegreen;
+      scale: 1.1;
+  }
+  .banner{
+    margin-bottom: 60px;
+  }
+  /* main section-1 */
+.standard-section{
+    background-image: url(../assets/bg.png);
+}
+.card-containert{
+    display: flex;
+    gap: 28.2px;
+    box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card-description{
+   font-size: 0.93rem;
+   font-weight: 500;
+}
+.kinder{
+    color: rgba(100, 200, 255, 1);
+}
+.elementary{
+    color: rgba(240, 170, 0, 1);
+}
+.middle{
+    color: rgba(135, 0, 255, 1);
+}
+/* card-style */
+.card{
+    max-width: 367px;
+    max-height: 476px;
+    border-radius: 18.8px;
+    padding: 50px 40px;
+    text-align: center;
+    border: 2px solid lavenderblush;
+}
+.main-1{
+    display: flex;
+}
+
+  
+@media screen and (max-width:576) {
+    .hidden-icon{
+        display:block;  
+  }
+  .nav-links ul{
+    display: none;
+  }
+}
