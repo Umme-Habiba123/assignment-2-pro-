@@ -16,16 +16,25 @@
   .sky-blue{
      color: rgb(8, 170, 234);
   }
-  
+  .soft-blue{
+    background-color: rgba(60, 216, 232, 1);
+  }
+.light-green{
+    background-color: rgba(149, 178, 38, 1);
+}
+.purple{
+    background-color: rgba(93, 88, 240, 1);
+}
+.background-color{
+    background-color: white;
+}
   /* NAV section style*/
   body{
       margin: 0 auto; 
-      max-width: 1158px;
-  }
-  .header{
-      max-width: 0 140px;
+      max-width: 1440px;
   }
   .nav-parent{
+    max-width: 1159px;
       justify-content: space-between;
       margin: 0 auto;
       align-items: center;
@@ -82,7 +91,13 @@
   .hidden-icon{
     display:none
   }
+
   /* Banner section */
+
+  .banner{
+    max-width: 1159px;
+    margin: 0 auto;
+  }
   .banner-parent{
     display: flex;
     align-items: center;
@@ -120,17 +135,32 @@
     margin-bottom: 60px;
   }
   /* main section-1 */
-.standard-section{
-    background-image: url(../assets/bg.png);
+  .curriculum{
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+.card-a-total{
+    max-width: 540px;
+    border-radius: 18px;
+    box-shadow: 0px 2px 4px rgba(12, 12, 12, 0.2);
+    background-color: white;
 }
-.card-containert{
+.card-a-des{
+    margin-top: 47px;
+    margin-bottom: 34px;
+}
+.card-container{
     display: flex;
-    gap: 28.2px;
-    box-shadow: 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 28px;
 }
 .card-title{
     font-size: 1.5rem;
     font-weight: bold;
+    margin-top: 36px;
 }
 .card-description{
    font-size: 0.93rem;
@@ -145,25 +175,230 @@
 .middle{
     color: rgba(135, 0, 255, 1);
 }
-/* card-style */
-.card{
-    max-width: 367px;
-    max-height: 476px;
-    border-radius: 18.8px;
-    padding: 50px 40px;
-    text-align: center;
-    border: 2px solid lavenderblush;
+/* main section-1-card-style */
+.card-1{
+     background-color: aquamarine;
+     box-shadow: 0px 2px 4px rgba(12, 12, 12, 0.2); 
 }
-.main-1{
+.card-1 a{
+   color: rgba(100, 200, 255, 1);
+}
+.card-1 img{
+    max-width: 141px;
+    max-height: 141px; 
+}
+.card-2 a{
+    color: rgba(240, 170, 0, 1);
+}
+.card-3 a{
+    color: rgba(135, 0, 255, 1);
+}
+/* Arrow sectionn */
+.arrow{
     display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+.ball{
+    width: 60px;
+    height: 60px;
+    border: 1px solid orange;
+    border-radius: 50%;
+    background-color: rgb(254, 181, 44);
+    color: white;
+
+}
+.ball2{
+    width: 60px;
+    height: 60px;
+    border: 1px solid orange;
+    border-radius: 50%;
+    background-color: rgb(254, 181, 44);
+    color: white;
+}
+.iconn{
+    position: relative;
+    left: 25px;
+    top: 20px;
+}
+.arrow:hover{
+    scale: 1.2;
+    transition: 0.5s;
+}
+/* main section-2 */
+.card-button-a{
+      font-size: 0.96rem;
+      font-weight: 500;
+      color: white;
+      border-radius: 47.93px;
+      padding: 15px 18px;
+      position: relative;
+      top: -35px;
+      left: 38px;
+}
+.card-button{
+    font-size: 0.96rem;
+    font-weight: 500;
+    color: white;
+    border-radius: 47.93px;
+    padding: 9px 18px;
+    position: relative;
+    top: -30px;
+    left: 30px;
+}
+.card-button-a:hover{
+    background-color:lightslategray;
+      scale: 1.1;
+      transition: 0.5s;
+}
+.card-button:hover{
+    background-color: darkolivegreen;
+      scale: 1.1;
+      transition: 0.5s;
 }
 
-  
-@media screen and (max-width:576) {
+.our-stories-section{
+    /* background-image: url("../assets/bg.png"); */
+    max-width: 1440px;
+    background:url("../assets/bg.png"),linear-gradient(white, rgb(254, 229, 187));
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+.our-story{
+    text-align: center;
+    font-size: 2.87rem;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+ /* main section-2- card -style */  
+.parent-stories-card{
+    display: flex;
+    gap: 18px;
+    box-shadow: 0px 2px 4px rgba(12, 12, 12, 0.2);
+    
+}
+.fourth-card-container{
+   max-width: 601px;
+   max-height: 622px;
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 18px;
+    border-radius: 16px;
+    padding: 18px 18px;
+}
+.fourth-card-content{
+    margin: 0 37px;
+    font-size: 0.96rem;
+    font-weight: bold;
+}
+.card-b{
+  max-width: 290px;
+  max-height: 301px;
+  border-radius: 18px;
+  box-shadow: 0px 2px 4px rgba(12, 12, 12, 0.2);
+}
+.card-a-total img{
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+}
+.card-content{
+    padding-right: 68px;
+    padding-left: 38px;
+}
+.card-b img{
+  width:100% ;
+  height: auto;
+  border-radius: 18px;
+}
+.card-a-title{
+    max-width: 463px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 58px;
+    margin-bottom: 43px;
+}
+/* footer section */
+.footer{
+    max-width: 1439px;
+    max-height: 519px;
+    margin-top: 190px;
+    background-color: rgba(1, 172, 253, 1);
+    color: white;
+}
+.logo-kids{
+    display: flex;
+    position: relative;
+    bottom: 20px;
+
+}
+.footer-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    padding: 150px 20px;
+    align-items: center;
+
+
+}
+.logo-kids img{
+    color: white;
+    width: 82px; 
+    height: 81px;
+}
+.education{
+    font-size: 2.6rem;
+    font-weight: bold;
+    position:relative;
+    bottom: 35px;
+}
+.edu-description{
+ position: relative;
+ bottom: 80px;
+}
+.about-scl{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 172px;
+    text-align: left;
+
+}
+.footer-list{
+    list-style: none;
+}
+.footer-link{
+   text-decoration: none;
+   color: white;
+   margin-bottom: 50px;
+
+}  
+.keep-touch{
+   margin-left: 143px;
+   position: relative;
+   bottom: 120px; 
+}
+marquee{
+    height: 50px;
+    background-color: bisque;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+ 
+/* @media screen and (max-width:576) {
     .hidden-icon{
         display:block;  
   }
   .nav-links ul{
     display: none;
   }
-}
+} */
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  
