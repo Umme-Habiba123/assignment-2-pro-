@@ -397,8 +397,10 @@ marquee{
   }
 } */
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
+    .hidden-icon{
+        display:block; 
   }
-  
+  .nav-links ul{
+    display: hidden;
+  }
+}
