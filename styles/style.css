@@ -91,6 +91,9 @@
   .hidden-icon{
     display:none
   }
+  .horizontal{
+    display: none;
+  }
 
   /* Banner section */
 
@@ -461,6 +464,9 @@ marquee{
   }
   .nav-links, .nav-button,.school{
     display: none;
+  }
+  .horizontal{
+    display: block;
   }
   .banner-parent{
     flex-direction: column-reverse;
