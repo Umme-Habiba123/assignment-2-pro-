@@ -100,10 +100,10 @@
   }
   .banner-parent{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 50px;
     padding-bottom: 26px;
- 
   }
   .banner-title{
       font-size: 3.5rem;
@@ -304,7 +304,6 @@
 }
 
 .our-stories-section{
-    /* background-image: url("../assets/bg.png"); */
     max-width: 1440px;
     background:url("../assets/bg.png"),linear-gradient(white, rgb(254, 229, 187));
     box-sizing: border-box;
@@ -366,6 +365,24 @@
     font-weight: bold;
     margin-top: 58px;
     margin-bottom: 43px;
+} 
+.View-button{
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px; 
+    color: white;
+    padding: 10px 60px;
+    border: none;
+    background-color: black;
+    transition: 0.5s; 
+      margin: 0px auto;
+      align-items: center;
+      justify-content: center;
+      
+}         
+.View-button:hover{
+    background-color: darkblue;
+    scale: 1.1;
 }
 /* footer section */
 .parent-div{
@@ -437,13 +454,54 @@ marquee{
     display: none;
   }
 } */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
     .hidden-icon{
         display:block; 
         margin-right: 20px;
   }
   .nav-links, .nav-button,.school{
     display: none;
+  }
+  .banner-parent{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .card-container{
+    text-align: center;
+    margin: 20px;
+  }
+  .card-a-total{
+    display: none;
+  }
+  .fourth-card-container{
+    grid-template-rows: 1fr; 
+  }
+  .card-button{
+    font-size: 0.56rem;
+    font-weight: 500;
+    color: white;
+    border-radius: 28.5px;
+    padding: 5px 11px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+    justify-content: center;
+  }
+  .arrow{
+    display: none;
+  }
+  .logo-kids{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .parent-div{
+    grid-template-areas: 
+       "logo-kids"
+       "edu-details"
+       "About School"
+       "logo-containerr"
+    ;
   }
 }
 
@@ -453,5 +511,16 @@ marquee{
     .nav-parent{
         align-items: center;
     }
+    .hidden-icon{
+        display:block; 
+        margin-right: 20px;
+  }
+    .nav-links, .nav-button,.school{
+        display: none;
+      }
+    .banner-parent{
+        flex-direction: column-reverse;
+        text-align: center;
+      }
 
 }
