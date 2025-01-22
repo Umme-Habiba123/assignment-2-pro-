@@ -141,30 +141,12 @@
     text-align: center;
     margin-bottom: 80px;
   }
-.card-a-total{
-    max-width: 540px;
-    border-radius: 18px;
-    box-shadow: 0px 2px 4px rgba(12, 12, 12, 0.2);
-    background-color: white;
-}
-.card-a-des{
-    margin-top: 47px;
-    margin-bottom: 34px;
-}
-.card-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 28px;
-}
-.card-title{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 36px;
-}
+
 .card-description{
    font-size: 0.93rem;
    font-weight: 500;
+   color: rgba(128, 128, 128, 1);
+   margin-bottom: 33px;
 }
 .kinder{
     color: rgba(100, 200, 255, 1);
@@ -176,16 +158,59 @@
     color: rgba(135, 0, 255, 1);
 }
 /* main section-1-card-style */
-.card-1{
-     background-color: aquamarine;
-     box-shadow: 0px 2px 4px rgba(12, 12, 12, 0.2); 
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 28px;
+    text-align: center;
+    background-image: url("../assets/bg.png");
+    margin: 0 auto;
+
 }
+.card-1{
+    max-width: 367px;
+    /* max-height: 476px; */
+     background-color: aquamarine;
+     border-radius: 18.8px;
+     box-shadow: 0px 2px 4px rgba(12, 12, 12, 0.2); 
+     transition: transform 0.3s ease;
+     padding: 50px;
+
+}
+.card-2{
+    max-width: 367px;
+    max-height: 476px;
+    background-color: aquamarine;
+    border-radius: 18.8px;
+    box-shadow: 0px 2px 4px rgba(12, 12, 12, 0.2);
+}
+.card-3{
+    max-width: 367px;
+    max-height: 476px;
+    background-color: aquamarine;
+    border-radius: 18.8px;
+    box-shadow: 0px 2px 4px rgba(12, 12, 12, 0.2); 
+}
+.card-1:hover {
+    background-color: lightblue;
+    /* scale: 1.1; */
+    transition: 0.5s;
+}
+.card-2:hover {
+    background-color: lightsalmon;
+    /* scale: 1.1; */
+    transition: 0.5s;
+}
+.card-3:hover {
+    background-color: lightskyblue;
+    /* scale: 1.1; */
+    transition: 0.5s;
+}
+
+
 .card-1 a{
    color: rgba(100, 200, 255, 1);
-}
-.card-1 img{
-    max-width: 141px;
-    max-height: 141px; 
 }
 .card-2 a{
     color: rgba(240, 170, 0, 1);
@@ -238,6 +263,25 @@
       top: -35px;
       left: 38px;
 }
+.card-a-total{
+    max-width: 540px;
+    border-radius: 18px;
+    box-shadow: 0px 2px 4px rgba(12, 12, 12, 0.2);
+    background-color: rgb(162, 76, 76);
+    background-color: white;
+    margin-left: 140px;
+
+}
+.card-a-des{
+    margin-top: 47px;
+    margin-bottom: 34px;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 32px;
+}
 .card-button{
     font-size: 0.96rem;
     font-weight: 500;
@@ -288,6 +332,7 @@
    gap: 18px;
     border-radius: 16px;
     padding: 18px 18px;
+    margin-right: 140px;
 }
 .fourth-card-content{
     margin: 0 37px;
@@ -299,6 +344,7 @@
   max-height: 301px;
   border-radius: 18px;
   box-shadow: 0px 2px 4px rgba(12, 12, 12, 0.2);
+  background-color: white;
 }
 .card-a-total img{
     width: 100%;
@@ -322,63 +368,58 @@
     margin-bottom: 43px;
 }
 /* footer section */
-.footer{
-    max-width: 1439px;
-    max-height: 519px;
-    margin-top: 190px;
-    background-color: rgba(1, 172, 253, 1);
-    color: white;
-}
-.logo-kids{
+.parent-div{
     display: flex;
-    position: relative;
-    bottom: 20px;
-
+    flex-wrap: wrap;
+    padding: 123px 174px 228px 140px;
+    background-color: rgba(29, 161, 242, 1);
 }
-.footer-parent{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-around;
-    padding: 150px 20px;
-    align-items: center;
-
-
+/* Kids Education */
+.logo-kids{
+   display: flex;
 }
 .logo-kids img{
+    width: 83px;
+    height: 82px;
+}
+.logos-title{
+    font-size: 42px;
+    color:white;
+    width: 206px;
+    height: 80px;
+    position: relative;
+    top: -40px;
+}
+.edu-details{
+    font-size: 20px;
     color: white;
-    width: 82px; 
-    height: 81px;
+   max-width: 399px;
+   height: 100px;
+   margin-right: 172px;
+   margin-top: 30px
 }
-.education{
-    font-size: 2.6rem;
+/* about school */
+.scl-title{
+    font-size: 24px;
     font-weight: bold;
-    position:relative;
-    bottom: 35px;
+    color: white;
 }
-.edu-description{
- position: relative;
- bottom: 80px;
+.scl-list{
+   list-style: none;
+   margin-right: 144px;
 }
-.about-scl{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-left: 172px;
-    text-align: left;
-
+.scl-list-link{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
 }
-.footer-list{
-    list-style: none;
+.keep-in{
+   font-size: 26px;
+   font-weight: bold;
+   color: white; 
 }
-.footer-link{
-   text-decoration: none;
-   color: white;
-   margin-bottom: 50px;
-
-}  
-.keep-touch{
-   margin-left: 143px;
-   position: relative;
-   bottom: 120px; 
+.logo-containerr img{
+    gap: 10px;
 }
 marquee{
     height: 50px;
@@ -399,8 +440,18 @@ marquee{
 @media only screen and (max-width: 600px) {
     .hidden-icon{
         display:block; 
+        margin-right: 20px;
   }
-  .nav-links ul{
-    display: hidden;
+  .nav-links, .nav-button,.school{
+    display: none;
   }
+}
+
+
+
+@media screen and (min-width:576px) and (max-width:990px) {
+    .nav-parent{
+        align-items: center;
+    }
+
 }
